@@ -1,0 +1,8 @@
+<h1> Resultados: </h1>
+<h2>{{ pergunta.texto }}</h2>
+
+<ul>
+{% for alternativa in pergunta.alternativa_set.all %}
+<li>{{ alternativa.texto }} - {{ alternativa.votos }} voto(s)</li>
+{% endfor %}
+</ul>

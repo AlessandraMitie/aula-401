@@ -1,0 +1,8 @@
+<h1> {{ pergunta.texto }}</h1>
+<form action="{% url 'votar' %}" method="POST">
+    {% csrf_token %}
+    {% for alternativa in pergunta.alternativa_set.all %}
+    <div><input name="escolha" type="radio" value="{{ alternativa.id }}"> {{ alternativa.texto }}</div>
+    {% endfor %}
+    <button type="submit">Confirmar Voto</button>
+</form>

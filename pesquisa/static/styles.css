@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+.main.title{
+    color: red;
+}
+
+.main.list{
+    border: 2px solid red;
+}
+
+.main.listitem{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 28pt;
+}
