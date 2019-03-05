@@ -14,6 +14,7 @@
     <ul class="main list">
         {% for pergunta in perguntas %}
         <li class="main listitem"><a  href="{% url 'responder' pergunta.id %}">{{ pergunta }}</a></li>
+        <!-- em href, o Django espera um URL no arquivo urls.py com o nome name='responder' -->
         {% endfor %}
     </ul>
 </body>
